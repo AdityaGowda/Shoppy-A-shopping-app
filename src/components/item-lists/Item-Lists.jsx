@@ -8,6 +8,7 @@ import axios from 'axios';
 import { useNavigate, useParams } from "react-router";
 import Navbar from '../navbar/Navbar';
 import ItemCard from '../item-card/item-car';
+import Footer from '../footer/footer';
 
 // item-list function created
 const ItemLists = () => {
@@ -24,7 +25,7 @@ const ItemLists = () => {
   }, []);
 
   return (
-    
+    <div>
     <div style={{height:"95vh",width:"99vw", display:"flex",flexDirection:"column"}}>
       <Navbar showSearch={true} searchText={searchText} onSearchChange={(v)=>setSearchText(v)}/>
      
@@ -51,6 +52,9 @@ const ItemLists = () => {
       })}
       </div>
      </div>
+     
+    </div>
+    <Footer/>
     </div>
   );
 };

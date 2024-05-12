@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Navbar from '../navbar/Navbar';
 import CartCard from '../cart-card/cart-card';
+import Footer from '../footer/footer';
 const CartItems = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
@@ -100,7 +101,7 @@ let totalCount=0;
 <button className='cart-flex cart-button'>Pay Now</button>
 </div>
 </div>
-
+<Footer/>
 
     </>
     

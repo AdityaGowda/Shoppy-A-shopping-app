@@ -6,7 +6,6 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from "react-router";
 import axios from 'axios';
 import Navbar from '../navbar/Navbar';
-import Footer from '../footer/footer';
 
 // product details function is created
 const ProductDetails = () => {
@@ -104,7 +103,6 @@ const ProductDetails = () => {
               </div>
           </div>
       </div>
-      <Footer/>
       </>
   );
 };

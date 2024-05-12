@@ -12,6 +12,7 @@ import { useNavigate } from "react-router";
 import Navbar from '../navbar/Navbar';
 import MainImage from '../main-image/Main-Image';
 import ProductCard from '../product-card/Product-Card';
+import Footer from '../footer/footer';
 
 // Product-list function is created
 const ProductLists = () => {
@@ -63,8 +64,10 @@ const ProductLists = () => {
       
      </div>
      </div>
+     <Footer/>
       </div>
-     
+
+    
     </>
  
   );
